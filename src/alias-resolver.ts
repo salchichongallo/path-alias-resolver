@@ -8,7 +8,7 @@ export class AliasResolver
 
   protected aliases: any = {};
 
-  protected readonly rule = /(?:require|import)[^'"]*(?:'|")([^'"]*)(?:'|")/gi;
+  protected readonly rule = /(?:require|import|export)[^'"]*(?:'|")([^'"]*)(?:'|")/gi;
 
   protected constructor(root: string, aliases: any = {})
   {
